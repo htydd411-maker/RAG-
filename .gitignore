@@ -1,0 +1,28 @@
+# 虚拟环境（479MB，由 requirements.txt 重建）
+.venv/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 向量数据库（13MB，由 vectorSaveTest.py 重新灌库生成）
+RagLangChainTest-main/chromaDB/
+
+# 对话历史 sqlite（mainMemory.py 运行时生成）
+RagLangChainTest-main/memory.db
+
+# 本地大模型权重（other/models 6.5G + table-transformer-detection 221M，不入库）
+RagLangChainTest-main/other/models/
+RagLangChainTest-main/other/models/table-transformer-detection/
+
+# 本地密钥
+.env
+
+# PDF 预处理与多轮记忆测试的运行产物（均可重新生成）
+RagLangChainTest-main/tools/output.txt
+RagLangChainTest-main/test/memory.db
+RagLangChainTest-main/input/健康档案(含表格01)/
+
+# PyCharm 数据源配置（可能存数据库口令，不入库）
+.idea/dataSources.xml
+.idea/dataSources.local.xml

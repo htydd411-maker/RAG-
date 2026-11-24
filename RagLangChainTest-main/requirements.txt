@@ -1,0 +1,19 @@
+pdfminer.six
+nltk==3.9.1
+chromadb==0.5.5
+langchain==0.2.14
+langchain-openai==0.1.22
+langchain-chroma==0.1.2
+
+# mainMemory.py 多轮记忆版额外需要
+langchain-community==0.2.12
+greenlet==3.5.6
+
+# chromadb 0.5.5 调新版 posthog 的 capture() 会崩，需钉住
+posthog==3.5.0
+
+# mainReranker.py 的 re-rank 模型需要（会带出 torch / transformers）
+sentence-transformers==3.0.1
+
+# 全部脚本的密钥改从 .env 读取
+python-dotenv
